@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head Section -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <!-- width=device-width　はデバイス幅に合わせる　shrink-to-fit=noはiOS向けの幅を調整する -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- drawer.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css"
+    />
+    <!-- index.cssdrawer.cssよりも下の行で自分のCSS（style.cssなど）を読み込めば上書きできます。 -->
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
+
+    <title>大衆酒場 Tsujicho</title>
+  </head>
+
+  <!-- ここからbody -->
+  <body class="drawer drawer--right">
+    <div class="header-div">
+      <h3>地元の人が集うお店！</h3>
+      <h1><small>大衆酒場</small>Tsujicho</h1>
+      <!-- モーダルウィンドウの実装 -->
+      <header Class="header-bg" role="banner">
+        <!-- ハンバーガーボタン -->
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button>
+        <!-- ナビゲーションの中身 -->
+        <nav class="drawer-nav" role="navigation">
+          <ul class="drawer-menu">
+            <li><a class="drawer-brand" href="#">大衆酒場 Tsujicho</a></li>
+            <li><a class="drawer-menu-item" href="#menu">メニュー</a></li>
+            <li><a class="drawer-menu-item" href="#info">インフォ</a></li>
+            <li>
+              <a class="drawer-menu-item" href="#modal-reservation">予約</a>
+            </li>
+            <li>
+              <a class="drawer-menu-item" href="#modal-login">ログイン</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!-- <hr /> -->
+    <h2 class="font-weight-bold-1">大衆酒場 Tsujichoのメニューはこちら</h2>
+
+    <!-- 仮で線を儲ける -->
+    <!-- <hr /> -->
+    <!-- <div class="topMenuText">
+      <p class="food-menu-text">フードメニュー</p>
+      <p class="drink-menu-text">ドリンクメニュー</p>
+    </div> -->
+    <div class="topMenu">
+      <img src="img\img_menu\drinks\all-drinks.jpg" alt="" />
+
+      <!-- このへんに文字を追加してhoverしたら文字もでてくるようにする。 -->
+      <img src="img\img_menu\foods\grill_3\asari_3.jpg" alt="" />
+    </div>
+
+    <hr />
+
+
+
+    
+    <!-- jsのリンク -->
+    <script type="text/javascript" src="menu.js"></script>
+  </body>
+</html>
